@@ -17,51 +17,106 @@
 
     </head>
     <body>
-
-
- <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand"> 
-  
-
-
-</h3><div class="navbar-nav navbar-fixed-top nav-wrapper">
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Shop</a></li>
                     <li><a href="#">Find a Retailer</a></li>
                        <li><a href="#">Blog</a></li>
                           <li><a href="#">About</a></li>
                   <li><a href="#">Contact</a></li>
-                
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
-        <br>
+    </nav>
+
+ <div class="container-fluid ingredients">
+     <img src="/img/logobig.png" class="img-responsive">
+      
+      <div class="container">
 
 
-          <div class="inner cover">
-           <img src="/img/logobig.png" class="img-responsive">
+
+          <div class="col-md-10 col-md-offset-2">
+      
       </div>
    <h1>
-Healthy, delicious, superfood snacks made with only raw, sprouted and organic ingredients.</h1>
-            <p class="lead">Pashen bars are made using only the highest quality, freshest raw and organic ingredients. They are sprouted and dehydrated to maximize nutritional content. Ingredients include buckwheat</p>
-</div>
-</div>
-</div>
-    <p class="lead">
-              <a href="#" class="btn btn-lg btn-ghost">Learn more</a>
+Healthy, delicious, superfood snacks made with raw, sprouted and organic ingredients.</h1> 
             </p>
+</div>
+         
+</div>
+</div>
+  
+        
+          </div>
+
+
+
+     </div>
+
+      </div>
+
+    </div>
+
+ 
+      
+   <div class="container-fluid">
+  <img src="/img/bars.png" class="img-responsive"> 
+</div>
+
+
+<div class="container-fluid center padded-huge" id="circles">
+  <div class="row">
+    <div class="col-md-12">
+
+
+  <span class="headline">Learn more about</span>
+    <a class="btn btn-lg btn-ghost" href="{{ site.baseurl }}/features/" role="button">Ingredients and Nutrition Facts</a>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+      
+      <div class="container">
+
+<h1>
+Pashen bars are made using only the highest quality, freshest raw and organic ingredients. They are sprouted and dehydrated to maximize nutritional content.</h1> 
+
+
+      
+<h1>
+<span class="grey">Ingredients ></span><span class="yellow">Organic sprouted buckwheat </span><span class="blue">Raw honey </span><span class="green">Organic raw agave nectar </span><span class="yellow"> Organic raw almond butter </span><span class="pink">
+Organic raw pumpkin seeds</span><span class="green"> Organic raw cacao butter </span><span class="yellow">Organic cranberries </span><span class="">Organic raw goji 
+berries</span><span class="green"> Organic raw cacao powder</span><span class="pink"> Organic raw black and white sesami seeds </span><span class="blue">Organic raw 
+sunflower seeds</span><span class="yellow"> Organic raw coconut oil</span><span class="red"> Organic cinnamon </span><span class="blue">Raw vanilla powder and </span><span class="pink">Sea salt</span>
+               
+                  </div>
+
+         
+</div>
+
+
+
+
+
+</div>
+  
         
           </div>
 
@@ -74,21 +129,6 @@ Healthy, delicious, superfood snacks made with only raw, sprouted and organic in
     </div>
 
 
-      
-   
-
-
-<div class="container-fluid center padded-huge visible-lg" id="circles">
-  <div class="row">
-    <div class="col-md-12">
-
-
-  <span class="headline">Learn more about</span>
-    <a class="btn btn-lg btn-ghost" href="{{ site.baseurl }}/features/" role="button">Features</a>
-
-    </div>
-  </div>
-</div>
 
     <div class="footer">
             <div class="inner">
@@ -101,13 +141,6 @@ Healthy, delicious, superfood snacks made with only raw, sprouted and organic in
   <script src="/js/jquery-1.11.3"></script>
     <script src="/js/bootstrap.js"></script>
 
-    <script> $(function() {
-    $('#nav-wrapper').height($("#nav").height());
-    
-    $('#nav').affix({
-        offset: { top: $('#nav').offset().top }
-    });
-});</script>
 
 
     </body>

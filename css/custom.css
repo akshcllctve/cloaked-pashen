@@ -28,6 +28,7 @@ a:hover {
 html,
 body {
   background-color: #333;
+  background-image: url('/img/background.png');
 }
 body {
   color: #000000;
@@ -48,17 +49,7 @@ body {
 
 
 }
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-    background-image: url('/img/ingredients1.png');
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
 
-
-}
 
 /* Padding for spacing */
 .inner {
@@ -108,6 +99,8 @@ body {
 
 
 }
+
+
 .padded-huge {
   padding-top: 175px;
     padding-bottom: 175px;
@@ -124,21 +117,45 @@ body {
 
 }
 
-
-
-#nav.affix {
-    position: fixed;
-    top: 0;
-    width: 100%
+.ingredients {
+  background-color: white;
 }
 
-#nav > .navbar-inner {
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -o-border-radius: 0;
+#bars {
+  background-image: url('/img/bars.png');
+  background-width: 100%;
+}
+
+.pink{
+  color: #e73692;
+}
+
+.yellow{
+  color: #f4c215;
+}
+.green{
+  color: #1dad4b;
+}
+.red{
+  color: #ed1b24;
+}
+.blue{
+  color: #8ed0f2;
+}
+
+.grey {
+  color: #404040;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 25px;
+  padding-top: 25px;
+
+}
+
+.navbar-fixed-top {
+  position: absolute;
 }
 
 
@@ -175,6 +192,7 @@ body {
 
 
 }
+
 
 .footer {
     background-color: #333;
