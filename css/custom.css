@@ -3,6 +3,8 @@
  */
 
 /* Links */
+
+
 a,
 a:focus,
 a:hover {
@@ -28,16 +30,25 @@ a:hover {
 html,
 body {
   background-color: #333;
-  background-image: url('/img/background.png');
+  background-image: url('/img/background.jpg');
+  font-family: 'Ubuntu', sans-serif;
 }
 body {
   color: #000000;
-  text-align: center;
+  text-align: left;
   background-color: #fff;
 
 
 }
 
+.huge-text {
+  font-size: 69px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -92,7 +103,7 @@ body {
 }
 
 #circles {
-  background-image: url('/img/circles.jpg');
+  background-image: url('/img/circles.png');
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
@@ -100,10 +111,19 @@ body {
 
 }
 
+#tagline {
+  background-color: #fff9b6;
+}
 
 .padded-huge {
   padding-top: 175px;
     padding-bottom: 175px;
+
+}
+
+.padded-big {
+  padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 .headline {
@@ -118,7 +138,10 @@ body {
 }
 
 .ingredients {
-  background-color: white;
+  background-color: transparent;
+  background-image: url('/img/circles.png');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #bars {
@@ -146,9 +169,11 @@ body {
 .grey {
   color: #404040;
 }
+
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
+
   font-size: 25px;
   padding-top: 25px;
 
@@ -157,7 +182,11 @@ body {
 .navbar-fixed-top {
   position: absolute;
 }
-
+.navbar-default .navbar-nav > li > a {
+ color: #fff9b6;
+ font-weight: 300;
+ font-size: 15px;
+}
 
 @media (min-width: 768px) {
   .masthead-brand {
@@ -181,7 +210,10 @@ body {
   font-weight: bold;
 }
 
-
+.center {
+   margin: 0 auto;
+   text-align: center;
+}
 /*
  * Footer
  */
@@ -195,7 +227,7 @@ body {
 
 
 .footer {
-    background-color: #333;
+    background-color: #16281f;
 }
 .social {
   padding: 15px;
@@ -209,6 +241,23 @@ i.fa {
  * Affix and center
  */
 
+@media (min-width: 768px) {
+
+    .navbar-header
+    {
+        float: none;
+    }
+
+    .navbar-toggle
+    {
+        display: block;
+    }
+
+    .navbar-collapse.collapse
+    {
+        display: none !important;
+    }
+}
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
@@ -238,3 +287,4 @@ i.fa {
     width: 700px;
   }
 }
+
