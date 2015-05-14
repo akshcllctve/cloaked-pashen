@@ -18,7 +18,29 @@
 
     </head>
     <body>
-  
+
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">home</a></li>
+         <li class="shop"><a href="#shop">shop</a></li>
+      <li><a href="#about">about</a></li>
+       <li><a href="#about">find a retailer</a></li>
+        <li><a href="#contact">blog</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+   
+  </div>
+</nav>
+
 
  <div class="container-fluid ingredients">
      <img src="/img/logobig.png" class="img-responsive center">
@@ -119,7 +141,7 @@ sunflower seeds</span><span class="yellow"> Organic raw coconut oil</span><span 
 
 
 
-    <a class="btn btn-lg btn-ghost-white" href="{{ site.baseurl }}/features/" role="button">Shop Now</a>
+    <a class="btn btn-lg btn-ghost-white" href="{{ site.baseurl }}/features/" role="button">shop now</a>
 
     </div>
     <div class="col-md-4 white nopad">
@@ -127,21 +149,44 @@ sunflower seeds</span><span class="yellow"> Organic raw coconut oil</span><span 
 
 
 
-    <a class="btn btn-lg btn-ghost-white" href="{{ site.baseurl }}/features/" role="button">Find a Retailer</a>
+    <a class="btn btn-lg btn-ghost-white" href="{{ site.baseurl }}/features/" role="button">find a retailer</a>
 
     </div>
     <div class="col-md-4 white nopad">
 
 
-    <a class="btn btn-lg btn-ghost-white" href="{{ site.baseurl }}/features/" role="button">Contact Us</a>
+    <a class="btn btn-lg btn-ghost-white" href="{{ site.baseurl }}/features/" role="button">contact us</a>
 
     </div>
   </div>
+
 </div>
 
 
 
+ <div class="container-fluid  padded-med yellowback center">
+  <div class="row">
+    <div class="col-md-12 white">
 
+<form action="http://akashacollective.createsend.com/t/d/s/irxil/" method="post" id="subForm">
+  <span class="handwriting small">sign up for our newsletter for cool articles, health tips and special offers ! </span>
+
+<br><br>
+
+     
+        <input id="fieldName" name="cm-name" type="text" required class="input-field" placeholder="name" />
+
+        <input id="fieldEmail" name="cm-irxil-irxil" type="email" required class="input-field" placeholder="email"/>
+
+    
+
+        <button type="submit" class="btn btn-ghost-white btn-lg">submit</button>
+
+</form>
+    </div>
+  </div>
+
+</div>
 
 
 
@@ -151,7 +196,7 @@ sunflower seeds</span><span class="yellow"> Organic raw coconut oil</span><span 
           
             </div>
       </div>
-
+  
 
 
 
@@ -163,7 +208,22 @@ sunflower seeds</span><span class="yellow"> Organic raw coconut oil</span><span 
         </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="/js/bootstrap.js"></script>
+<script>
+$('#monitor').html($(window).width());
 
-
+$(window).resize(function() {
+    var viewportWidth = $(window).width();
+    $('#monitor').html(viewportWidth);
+});</script>
+<script>
+jQuery('body').bind('click', function(e) {
+    if(jQuery(e.target).closest('.navbar').length == 0) {
+        // click happened outside of .navbar, so hide
+        var opened = jQuery('.navbar-collapse').hasClass('collapse in');
+        if ( opened === true ) {
+            jQuery('.navbar-collapse').collapse('hide');
+        }
+    }
+});</script>
     </body>
 </html>

@@ -6,13 +6,49 @@
 
 @font-face {
     font-family: 'Skia';
-    src:url('Skia.ttf.woff') format('woff'),
-        url('Skia.ttf.svg#Skia') format('svg'),
-        url('Skia.ttf.eot'),
-        url('Skia.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('/fonts/Skia.ttf.woff') format('woff'),
+        url('/fonts/Skia.ttf.svg#Skia') format('svg'),
+        url('/fonts/Skia.ttf.eot'),
+        url('/fonts/Skia.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
+
+.btn {
+  vertical-align: baseline;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #f4c215;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #f4c215;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #f4c215;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #f4c215;
+
+
+}
+
+.btn-lg {
+  font-size: 22px;
+}
+/* contact form */
+.input-field {
+height: 46px;
+padding: 5px 5px 5px 18px;
+margin: 5px;
+font-size: 22px;
+line-height: 1.33;
+border-radius: 0px;
+color: #f4c215;
+border-color: transparent;
+}
+
 
 a,
 a:focus,
@@ -44,11 +80,94 @@ a:hover {
 
 }
 
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-collapse {
+  background-color: #16281f;
+  border-color: #16281f;
+}
+.navbar-inverse .navbar-nav > li > a {
+color: #ffffff;
+font-size: 35px;
+line-height: 100%;
+padding-left:25px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+
+  background-color: #e73690;
+;
+
+}
+
+.navbar-inverse .navbar-toggle {
+  background-color: transparent;
+    border-radius: 0px;
+  border-color: transparent;
+
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #e73692;
+  font-size: 50px;
+  width: 88px;
+  height: 8px;
+  border-radius: 0px;
+
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 10px;
+}
+@media (max-width: 5000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 0px solid transparent;
+        box-shadow: inset 0 0px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+    margin-top: 0px;
+  }
+  .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+      display:block !important;
+  }
+}
 .handwriting {
   font-family: 'Architects Daughter', cursive;
   font-size: 50px;
 }
 
+.small {
+ 
+  font-size: 25px;
+}
 /* Custom default button */
 .btn-ghost-huge,
 .btn-ghost-huge:hover,
@@ -173,6 +292,12 @@ body {
     padding-bottom: 100px;
 
 }
+
+.padded-med {
+  padding-top: 65px;
+    padding-bottom: 65px;
+
+}
 .padded-big-bottom {
 
     padding-bottom: 100px;
@@ -211,6 +336,10 @@ body {
 
 .yellow{
   color: #f4c215;
+}
+
+.yellowback{
+  background-color: #f4c215;
 }
 .green{
   color: #1dad4b;
@@ -254,11 +383,14 @@ body {
   }
 }
 
-
-/*
- * Cover
- */
-
+ .navbar-collapse {
+        border-top: 0px solid transparent;
+        box-shadow: inset 0 0px 0 rgba(255,255,255,0.1);
+    }
+ .navbar-nav {
+ 
+    margin-top: 0px;
+  }
 .cover {
   padding: 0 20px;
 }
@@ -314,8 +446,14 @@ i.fa {
 
 
 @media (min-width: 768px) {
-
+ .navbar-collapse {
+        border-top: 0px solid transparent;
+        box-shadow: inset 0 0px 0 rgba(255,255,255,0.1);
+    }
+  .navbar-nav {
  
+    margin-top: 0px;
+  }
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
@@ -336,13 +474,25 @@ i.fa {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
-}
-
+} .navbar-nav {
+ 
+    margin-top: 0px;
+  }
+ .navbar-collapse {
+        border-top: 0px solid transparent;
+        box-shadow: inset 0 0px 0 rgba(255,255,255,0.1);
+    }
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
   .cover-container {
     width: 700px;
   }
-}
-
+} .navbar-nav {
+ 
+    margin-top: 0px;
+  }
+ .navbar-collapse {
+        border-top: 0px solid transparent;
+        box-shadow: inset 0 0px 0 rgba(255,255,255,0.1);
+    }
