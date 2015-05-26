@@ -7,56 +7,47 @@
        <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+
         <title>{{ page.title }}</title>
 
-    
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.cs">
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/custom.css">
+{% include analytics.html %}
 
     </head>
     <body>
 
- <div class="site-wrapper">
+{% include navigation.html %}
 
-      <div class="site-wrapper-inner">
+ {{ content }}
 
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand"> 
-             <img src="/img/logobl.png">
+ {% include signup.html %}
 
 
-</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
 
-          {{ content }}
+   {% include footer.html %}
 
-        
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  <script src="/js/jquery-1.11.3"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="/js/bootstrap.js"></script>
+<script>
+$('#monitor').html($(window).width());
+
+$(window).resize(function() {
+    var viewportWidth = $(window).width();
+    $('#monitor').html(viewportWidth);
+});</script>
+<script>
+jQuery('body').bind('click', function(e) {
+    if(jQuery(e.target).closest('.navbar').length == 0) {
+        // click happened outside of .navbar, so hide
+        var opened = jQuery('.navbar-collapse').hasClass('collapse in');
+        if ( opened === true ) {
+            jQuery('.navbar-collapse').collapse('hide');
+        }
+    }
+});</script>
     </body>
 </html>

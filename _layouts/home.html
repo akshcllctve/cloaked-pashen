@@ -19,30 +19,9 @@
     </head>
     <body>
 
-   <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-header">
+{% include navigation.html %}
 
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">home</a></li>
-         <li class="shop"><a href="#shop">shop</a></li>
-      <li><a href="#about">about</a></li>
-       <li><a href="#about">find a retailer</a></li>
-        <li><a href="#contact">blog</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
-   
-  </div>
-</nav>
-
-
- <div class="container-fluid ingredients">
+ <div class="container-fluid">
      <img src="/img/logobig.png" class="img-responsive center">
       
       
@@ -164,48 +143,9 @@ sunflower seeds</span><span class="yellow"> Organic raw coconut oil</span><span 
 
 
 
- <div class="container-fluid  padded-med yellowback center">
-  <div class="row">
-    <div class="col-md-12 white">
+{% include signup.html %}
 
-<form action="http://akashacollective.createsend.com/t/d/s/irxil/" method="post" id="subForm">
-  <span class="handwriting small">sign up for our newsletter for cool articles, health tips and special offers ! </span>
-
-<br><br>
-
-     
-        <input id="fieldName" name="cm-name" type="text" required class="input-field" placeholder="name" />
-
-        <input id="fieldEmail" name="cm-irxil-irxil" type="email" required class="input-field" placeholder="email"/>
-
-    
-
-        <button type="submit" class="btn btn-ghost-white btn-lg">submit</button>
-
-</form>
-    </div>
-  </div>
-
-</div>
-
-
-
-    <div class="footer center padded-big">
-            <div class="inner white"><span class="handwriting">follow us ></span>
-                    <span class="social">  <i class="fa fa-twitter fa-5x"></i><i class="fa fa-facebook fa-5x"></i><i class="fa fa-pinterest fa-5x"></i><i class="fa fa-instagram fa-5x"></i> </span>
-          
-            </div>
-      </div>
-  
-
-
-
-
-
-
-    <div class="container pinkback center white">
-    © 2015 &nbsp pashen corporation
-        </div>
+   {% include footer.html %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="/js/bootstrap.js"></script>
 <script>

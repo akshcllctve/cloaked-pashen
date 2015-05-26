@@ -14,6 +14,10 @@
     font-style: normal;
 }
 
+.block {
+  display: block;
+}
+
 .btn {
   vertical-align: baseline;
 }
@@ -76,6 +80,17 @@ a:hover {
   text-shadow: none; /* Prevent inheritence from `body` */
  border-radius: 0px;
   border: 1px solid #ffffff;
+  background-color: transparent;
+
+}
+
+.btn-ghost-grey,
+.btn-ghost-grey:hover,
+.btn-ghost-grey:focus {
+  color: #16281f;
+  text-shadow: none; /* Prevent inheritence from `body` */
+ border-radius: 0px;
+  border: 1px solid #16281f;
   background-color: transparent;
 
 }
@@ -161,12 +176,12 @@ padding-left:25px;
 }
 .handwriting {
   font-family: 'Architects Daughter', cursive;
-  font-size: 50px;
+  font-size: 63px;
 }
 
 .small {
  
-  font-size: 25px;
+  font-size: 30px;
 }
 /* Custom default button */
 .btn-ghost-huge,
@@ -189,7 +204,6 @@ padding-left:25px;
 html,
 body {
   background-color: #333;
-  background-image: url('/img/background.jpg');
   font-family: 'Skia';
 }
 body {
@@ -204,9 +218,7 @@ body {
   font-size: 250px;
 }
 
-.huge-text {
-  font-size: 77px;
-}
+
 
 .container-fluid {
   padding-left: 0px;
@@ -303,6 +315,12 @@ body {
     padding-bottom: 100px;
 
 }
+
+.padded-big-top {
+
+    padding-top: 100px;
+
+}
 .headline {
 
   font-size: 30px;
@@ -367,7 +385,6 @@ body {
 }
 
 
-
 .trans {
   background-color: transparent;
 }
@@ -381,6 +398,7 @@ body {
   .masthead-nav {
     float: right;
   }
+
 }
 
  .navbar-collapse {
@@ -454,6 +472,7 @@ i.fa {
  
     margin-top: 0px;
   }
+}
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
@@ -482,6 +501,7 @@ i.fa {
         border-top: 0px solid transparent;
         box-shadow: inset 0 0px 0 rgba(255,255,255,0.1);
     }
+  }
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
@@ -496,3 +516,31 @@ i.fa {
         border-top: 0px solid transparent;
         box-shadow: inset 0 0px 0 rgba(255,255,255,0.1);
     }
+
+
+    /*fonts */
+@media (min-width: 1200px) {
+.tagline {
+  font-size: 77px;
+}
+}
+
+@media (min-width: 767px) and (max-width: 1200px){ 
+.tagline {
+font-size: 50px;
+}
+}
+@media  (max-width: 767px) {
+
+.tagline {
+font-size: 55px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+
+  width: 55px;
+  height: 5px;
+  border-radius: 0px;
+
+
+}
+}
