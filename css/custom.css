@@ -382,8 +382,16 @@ body {
   color: #8ed0f2;
 }
 
+.blueback{
+  background-color: #8ed0f2;
+}
+
 .grey {
   color: #16281f;
+}
+
+.greyback {
+  background-color: #16281f;
 }
 .white {
   color: #ffffff;
