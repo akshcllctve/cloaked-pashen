@@ -1,9 +1,109 @@
----
-layout: default
----
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 
-<div class="post">
-{{ content }}
+        <title>{{ page.title }}</title>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/custom.css">
+{% include analytics.html %}
+
+    </head>
+    <body>
+
+{% include navigation.html %}
+
+<div class="container-fluid">
+
+    <div class="row">
+    
+    <div class="col-md-4">
+     <img src="/img/whitepashen.png" class="img-responsive center">
+      </div>
+      <div class="col-md-8 hidden-xs scenter">
+     {% include tagline.html %}
+      </div>
+
+  </div>
+         
 </div>
+
+ 
+<div class="container-fluid">
+  <div class="container padded-med">
+    <div class="row">
+      
+      <div class="col-md-9 col-md-push-3">
+
+         {{ content }}
+<div id"=share"><!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_sharing_toolbox"></div></div>
+      </div>
+    <div class="col-md-3 col-md-pull-9">
+        <div class="blog-index">  
+        <h2>Blog Archive</h2>
+          <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+        
+          {% endfor %}
+        </ul>
+    
+     
+
+
+
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="signup">
+  <div class="container-fluid yellowback white">
+{% include signup.html %}
+</div>
+</div>
+    
+
+
+
+    <div class="container center yellowback white">
+    © 2015 &nbsp pashen corporation
+        </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556bac4267738b15" async="async"></script>
+<script>
+$('#monitor').html($(window).width());
+
+$(window).resize(function() {
+    var viewportWidth = $(window).width();
+    $('#monitor').html(viewportWidth);
+});</script>
+<script>
+jQuery('body').bind('click', function(e) {
+    if(jQuery(e.target).closest('.navbar').length == 0) {
+        // click happened outside of .navbar, so hide
+        var opened = jQuery('.navbar-collapse').hasClass('collapse in');
+        if ( opened === true ) {
+            jQuery('.navbar-collapse').collapse('hide');
+        }
+    }
+});</script>
+    </body>
+</html>
