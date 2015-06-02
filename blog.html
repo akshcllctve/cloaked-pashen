@@ -27,14 +27,14 @@ description: List of pashen retailers
       <div class="col-md-9 col-md-push-3">
 
          {% for post in site.posts limit:1%}
-    
+    <ul>
            <li>
                 {{ post.content }}
                             <a href="{{ post.url }}#share">Click to share and comment</a>
 
               </li>
               
-              
+              </ul>
                   {% endfor %}
       </div>
 
@@ -49,8 +49,8 @@ description: List of pashen retailers
          
           {% endfor %}
         </ul>
-    
-
+    <hr>
+{% include wendy.html %}
 
 
         </div>

@@ -105,7 +105,17 @@ a:hover {
   background-color: transparent;
 
 }
+/* Custom default button */
+.btn-ghost-pink,
+.btn-ghost-pink:hover,
+.btn-ghost-pink:focus {
+  color: #ffffff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+ border-radius: 0px;
+  border: 1px solid #e73692;
+  background-color: #e73692;
 
+}
 .btn-ghost-grey,
 .btn-ghost-grey:hover,
 .btn-ghost-grey:focus {
@@ -219,13 +229,16 @@ padding-left:25px;
 
 }
 
+.img-circle {
+  width: 50%;
+}
 /*
  * Base structure
  */
 
 html,
 body {
-  background-color: #333;
+
   font-family: 'Skia';
 }
 body {
@@ -315,6 +328,10 @@ body {
   background-color: #fff9b6;
 }
 
+.viewcart {
+  margin: 10px;
+
+}
 .padded-huge {
   padding-top: 175px;
     padding-bottom: 175px;
@@ -330,6 +347,17 @@ body {
 .padded-med {
   padding-top: 65px;
     padding-bottom: 65px;
+
+}
+
+.padded-sm {
+  padding-top: 35px;
+    padding-bottom: 35px;
+
+}
+.padded-sm-bottom {
+
+    padding-bottom: 35px;
 
 }
 .padded-big-bottom {
