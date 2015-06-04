@@ -3,7 +3,32 @@
  */
 
 /* Links */
+.navbar-toggle .icon-bar:nth-of-type(2) {
+    top: 1px;
+}
 
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 28px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+}
 @font-face {
     font-family: 'Skia';
     src:url('/fonts/Skia.ttf.woff') format('woff'),
@@ -81,7 +106,11 @@ a:focus,
 a:hover {
   color: #e73690;
 }
-
+a.white,
+a:focus,
+a:hover {
+  color: #ffffff;
+}
 /* Custom default button */
 .btn-ghost,
 .btn-ghost:hover,
@@ -371,6 +400,12 @@ body {
     padding-top: 100px;
 
 }
+
+.padded-all {
+
+    padding: 75px;
+
+}
 .headline {
 
   font-size: 30px;
@@ -586,18 +621,22 @@ i.fa {
 
 
     /*fonts */
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 .tagline {
-  font-size: 77px;
+  font-size: 75px;
 }
 }
 
-@media (min-width: 767px) and (max-width: 1200px){ 
+@media (min-width: 767px) and (max-width: 1400px){ 
 .tagline {
 font-size: 50px;
 }
 }
 @media  (max-width: 767px) {
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 23
+    px;
+  }
 
 .tagline {
 font-size: 25px;
