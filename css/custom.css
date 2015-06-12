@@ -13,17 +13,38 @@
 
 .navbar-toggle .icon-bar {
     position: relative;
-    transition: all 500ms ease-in-out;
+    
+   
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(1) {
     top: 30px;
+
     transform: rotate(45deg);
      -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
 }
 
+.shopheader {
+  background-image: url('/img/shopheaderbackground.png');
+  
+}
+
+#highlight-pink {
+     display: inline;
+       padding: 0.25em;
+  background: #e73692;
+  box-shadow: 10px 0 0 #e73692, -10px 0 0 #e73692;
+  line-height: 55px;
+}
+
+#highlight-yellow {
+     display: inline;
+       padding: 0.25em;
+  background: #f4c215;
+  box-shadow: 10px 0 0 #f4c215, -10px 0 0 #f4c215;
+}
 .navbar-toggle.active .icon-bar:nth-of-type(2) {
     background-color: transparent;
 }
@@ -591,6 +612,7 @@ i.fa {
     position: fixed;
     bottom: 0;
   }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -654,4 +676,7 @@ font-size: 25px;
 
 
 }
+.btn {
+    display: block;
+  }
 }
