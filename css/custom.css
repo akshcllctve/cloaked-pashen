@@ -482,9 +482,14 @@ body {
 }
 
 .blueback{
-  background-color: #8ed0f2;
+  background-color: #8ed0f2; 
 }
 
+.bluesclues {
+    background-color: #8ed0f2; 
+    color: #ffffff;
+
+}
 .grey {
   color: #16281f;
 }
@@ -544,6 +549,11 @@ body {
 
 }
 
+.mcenter {
+  padding-top: 40px;
+  vertical-align: middle;
+
+}
 
 
 .center {
