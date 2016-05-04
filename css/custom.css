@@ -712,3 +712,23 @@ font-size: 25px;
   background-image: url('/img/cover.png');
 background-attachment: fixed;
 }
+#instafeed {
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+#instafeed a {
+  overflow: hidden;
+  float: left;
+  margin: 3px;
+  border-radius: 2px;
+  overflow: hidden;
+  width: calc(40% / 2 - 6px);
+}
+
+#instafeed a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 !important;
+}
