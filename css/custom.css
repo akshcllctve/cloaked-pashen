@@ -27,7 +27,8 @@
 }
 
 .shopheader {
-  background-image: url('/img/shopheaderbackground.png');
+  background-image: url('/img/circles.png');
+  background-attachment: fixed;
   
 }
 
@@ -180,6 +181,17 @@ a:hover {
  border-radius: 0px;
   border: 1px solid #16281f;
   background-color: transparent;
+
+}
+
+.btn-pink,
+.btn-pink:hover,
+.btn-pink:focus {
+  color: #16281f;
+  text-shadow: none; /* Prevent inheritence from `body` */
+ border-radius: 0px;
+  border: 1px solid #16281f;
+  background-color: #fff;
 
 }
 
@@ -506,7 +518,8 @@ body {
     padding-right: 0px;
 }
 .actions {
-  background-color: #16281f;
+  background-image: url('/img/trips.png');
+  background-attachment: fixed;
 }
 
 
@@ -689,4 +702,13 @@ font-size: 25px;
 .btn {
     display: block;
   }
+}
+
+.cover {
+  image-size: cover;
+}
+
+.hero {
+  background-image: url('/img/cover.png');
+background-attachment: fixed;
 }
