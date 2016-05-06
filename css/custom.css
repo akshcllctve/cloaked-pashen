@@ -46,6 +46,50 @@
   background: #f4c215;
   box-shadow: 10px 0 0 #f4c215, -10px 0 0 #f4c215;
 }
+
+.highlight-pink {
+
+       padding: 0.25em;
+  color: #e73692;
+  
+  line-height: 55px;
+}
+
+.highlight-yellow {
+
+       padding: 0.25em;
+  color: #f4c215;
+
+}
+
+.highlight-green {
+
+       padding: 0.25em;
+  color: #1dad4b;
+
+}
+
+.highlight-blue {
+
+       padding: 0.25em;
+  color: #8ed0f2;
+
+}
+
+.highlight-red {
+
+       padding: 0.25em;
+  color: #ed1b24;
+ 
+}
+
+.highlight-black {
+
+       padding: 0.25em;
+  color: #000;
+  
+}
+
 .navbar-toggle.active .icon-bar:nth-of-type(2) {
     background-color: transparent;
 }
@@ -140,9 +184,7 @@ a:hover {
   color: #ffffff;
 }
 /* Custom default button */
-.btn-ghost,
-.btn-ghost:hover,
-.btn-ghost:focus {
+.btn-ghost {
   color: #e73690;
   text-shadow: none; /* Prevent inheritence from `body` */
  border-radius: 0px;
@@ -151,10 +193,20 @@ a:hover {
 
 }
 
+.btn-ghost:hover,
+.btn-ghost:focus {
+  color: #ffffff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+ border-radius: 0px;
+  border: 1px solid #000;
+  background-color: #000;
+
+}
+
+
 /* Custom default button */
-.btn-ghost-white,
-.btn-ghost-white:hover,
-.btn-ghost-white:focus {
+.btn-ghost-white{
+
   color: #ffffff;
   text-shadow: none; /* Prevent inheritence from `body` */
  border-radius: 0px;
@@ -162,10 +214,18 @@ a:hover {
   background-color: transparent;
 
 }
+
+.btn-ghost-white:hover,
+.btn-ghost-white:focus {
+  color: #000;
+  text-shadow: none; /* Prevent inheritence from `body` */
+ border-radius: 0px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+
+}
 /* Custom default button */
-.btn-ghost-pink,
-.btn-ghost-pink:hover,
-.btn-ghost-pink:focus {
+.btn-ghost-pink {
   color: #ffffff;
   text-shadow: none; /* Prevent inheritence from `body` */
  border-radius: 0px;
@@ -173,9 +233,17 @@ a:hover {
   background-color: #e73692;
 
 }
-.btn-ghost-grey,
-.btn-ghost-grey:hover,
-.btn-ghost-grey:focus {
+
+.btn-ghost-pink:hover,
+.btn-ghost-pink:focus {
+  color: #ffffff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+ border-radius: 0px;
+  border: 1px solid #000;
+  background-color: #000;
+
+}
+.btn-ghost-grey {
   color: #16281f;
   text-shadow: none; /* Prevent inheritence from `body` */
  border-radius: 0px;
@@ -184,14 +252,32 @@ a:hover {
 
 }
 
-.btn-pink,
-.btn-pink:hover,
-.btn-pink:focus {
+.btn-ghost-grey:hover,
+.btn-ghost-grey:focus {
+  color: #16281f;
+  text-shadow: none; /* Prevent inheritence from `body` */
+ border-radius: 0px;
+  border: 1px solid #000;
+  background-color: #000;
+
+}
+
+.btn-pink, {
   color: #16281f;
   text-shadow: none; /* Prevent inheritence from `body` */
  border-radius: 0px;
   border: 1px solid #16281f;
   background-color: #fff;
+
+}
+
+.btn-pink:hover,
+.btn-pink:focus {
+  color: #16281f;
+  text-shadow: none; /* Prevent inheritence from `body` */
+ border-radius: 0px;
+  border: 1px solid #000;
+  background-color: #000;
 
 }
 
@@ -440,6 +526,12 @@ body {
 
 }
 
+.padded-sm-top {
+
+    padding-top: 35px;
+
+}
+
 .padded-all {
 
     padding: 75px;
@@ -517,8 +609,44 @@ body {
   padding-left: 0px;
     padding-right: 0px;
 }
+
 .actions {
   background-image: url('/img/trips.png');
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.actions1 {
+  background-image: url('/img/aalmond.png');
+
+  background-attachment: fixed;
+}
+
+.actions2 {
+  background-image: url('/img/apepito.png');
+
+  background-attachment: fixed;
+}
+.actions3 {
+  background-image: url('/img/acranberry.png');
+
+  background-attachment: fixed;
+}
+
+.actions1l {
+  background-image: url('/img/actions1l.png');
+
+  background-attachment: fixed;
+}
+
+.actions2l {
+  background-image: url('/img/actions2l.png');
+
+  background-attachment: fixed;
+}
+.actions3l {
+  background-image: url('/img/actions3l.png');
+
   background-attachment: fixed;
 }
 
@@ -699,13 +827,11 @@ font-size: 25px;
 
 
 }
-.btn {
-    display: block;
-  }
+
 }
 
 .cover {
-  image-size: cover;
+  size: cover;
 }
 
 .hero {
@@ -732,3 +858,5 @@ background-attachment: fixed;
   display: block;
   margin: 0 !important;
 }
+
+
