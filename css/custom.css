@@ -34,16 +34,18 @@ html {
 }
 
 .shopheader {
-  background-image: url('/img/circles.png');
+  background-image: url('/img/IMG_7775.png');
   background-attachment: fixed;
+  background-size: contain;
+  
   
 }
 
-#highlight-pink {
+#highlight-yellow2 {
      display: inline;
        padding: 0.25em;
-  background: #e73692;
-  box-shadow: 10px 0 0 #e73692, -10px 0 0 #e73692;
+  background: #f4c215;
+  box-shadow: 10px 0 0 #f4c215, -10px 0 0 #f4c215;
   line-height: 55px;
 }
 
@@ -58,40 +60,40 @@ html {
 
        padding: 0.25em;
   color: #e73692;
-  
+  font-size: 25px;
   line-height: 55px;
 }
 
 .highlight-yellow {
-
+ font-size: 25px;
        padding: 0.25em;
   color: #f4c215;
 
 }
 
 .highlight-green {
-
+ font-size: 25px;
        padding: 0.25em;
   color: #1dad4b;
 
 }
 
 .highlight-blue {
-
+ font-size: 25px;
        padding: 0.25em;
   color: #8ed0f2;
 
 }
 
 .highlight-red {
-
+ font-size: 25px;
        padding: 0.25em;
   color: #ed1b24;
  
 }
 
 .highlight-black {
-
+ font-size: 25px;
        padding: 0.25em;
   color: #000;
   
@@ -617,11 +619,7 @@ body {
     padding-right: 0px;
 }
 
-.actions {
-  background-image: url('/img/trips.png');
-  background-size: 100%;
-  background-attachment: fixed;
-}
+
 
 .actions1 {
   background-image: url('/img/aalmond.png');
@@ -805,6 +803,7 @@ i.fa {
         box-shadow: inset 0 0px 0 rgba(255,255,255,0.1);
     }
 
+}
 
     /*fonts */
 @media (min-width: 1400px) {
@@ -851,6 +850,13 @@ button .btn-lg {
     width: 100%;
 
 }
+}
+
+  @media  (max-width: 1000px) {
+  .shopheader {
+    background-size: cover;
+  }
+
 }
 
 }
