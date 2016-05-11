@@ -40,7 +40,11 @@ html {
   
   
 }
-
+.rmshopheader {
+    background-image: url('/img/cover.png');
+  background-attachment: fixed;
+  background-size: contain;
+}
 #highlight-yellow2 {
      display: inline;
        padding: 0.25em;
@@ -98,7 +102,9 @@ html {
   color: #000;
   
 }
-
+.black {
+  color: #000;
+}
 .navbar-toggle.active .icon-bar:nth-of-type(2) {
     background-color: transparent;
 }
@@ -854,6 +860,9 @@ button .btn-lg {
 
   @media  (max-width: 1000px) {
   .shopheader {
+    background-size: cover;
+  }
+  .rmshopheader {
     background-size: cover;
   }
 
